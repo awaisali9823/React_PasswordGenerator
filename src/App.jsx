@@ -34,19 +34,19 @@ function App() {
 
   return (
     <>
-      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 pt-5 pb-10  my-40 text-orange-500 bg-gray-800'>
-        <h1 className='text-white text-center text-3xl my-3 pb-5'>Password Generator</h1>
+      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 pt-5 pb-10  my-40 text-orange-500 bg-gray-800 sm:px-4 sm:pt-5 sm:pb-10 sm:my-40'>
+        <h1 className='text-white text-center text-3xl my-3 pb-5 sm:text-3xl sm:my-3 sm:pb-5'>Password Generator</h1>
         <div className='flex shadow rounded-lg overflow-hidden mb-4'>
           <input type="text"
-           className='outline-none w-full py-1 px-3'
+           className='outline-none w-full py-1 px-3 text-sm sm:py-1 sm:px-3'
            value={password}
            ref={passwordRef}
            placeholder='password'
            readOnly
           />
-          <button onClick={copyPassword} className='outline-none bg-blue-600 text-white px-3 py-0.5 shrink-0'>copy</button>
+          <button onClick={copyPassword} className='outline-none bg-blue-600 text-white px-3 py-0.5 text-sm shrink-0 sm:px-3 sm:py-0.5'>copy</button>
         </div>
-        <div className='flex text-sm gap-x-2'>
+        <div className='flex flex-col text-sm gap-y-2 gap-x-0 sm:flex-row sm:gap-y-0 sm:gap-x-2'>
           <div className='flex items-center gap-x-1'>
             <input type="range"
              className='cursor-pointer'
